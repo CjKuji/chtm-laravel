@@ -1,0 +1,420 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:7:  room_type_name: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:28:  has_child?: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:105:            {booking.has_child && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:107:                title="Child"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:150:                {booking.room_type_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:219:                <p className="text-sm text-gray-500">Extra Beds</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:282:              This record is a permanent snapshot generated during guest
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:65:          <div class="value">${booking.room_number ?? '—'}${booking.room_type_name ? ` · ${booking.room_type_name}` : ''}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:101:              <tr><td>Extra Beds</td><td style="text-align:right; font-weight:700;">${booking.extra_beds ?? 0}</td></tr>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:109:      Generated from archived booking snapshot on ${new Date().toLocaleString('en-US')}.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:49:    booking.room_type_name ||
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:172:                <p className="text-sm text-gray-500">Extra Beds</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:206:                <p className="text-xs text-gray-500 mb-1">Child</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:208:                  booking.has_child ? 'bg-blue-100 text-blue-700' : 'bg-gray-200 text-gray-600'
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:210:                  {booking.has_child ? 'YES' : 'NO'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:8:interface TaskItem {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:16:interface Task {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:19:  housekeeping_task_items?: TaskItem[];
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:23:  task: Task | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:26:  onComplete: (taskId: number, note?: string) => void;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:33:export default function HousekeepingModal({
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:34:  task,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:44:    RESET WHEN TASK CHANGES
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:47:    if (!task) return;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:49:    setOverallNote(task.note ?? "");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:54:    (task.housekeeping_task_items ?? []).forEach((i) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:59:  }, [task?.id]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:65:    return task?.housekeeping_task_items ?? [];
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:66:  }, [task]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:80:  const handleCheck = (item: TaskItem, checked: boolean) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:95:  if (!task) return null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:109:            Housekeeping Task
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:113:            Cleaning checklist progress
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:142:              key={`task-item-${item.id}`}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:187:              Overall Cleaning Note
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:212:            onClick={() => onComplete(task.id, overallNote)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:216:            Complete Cleaning
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:50:  children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:53:  children: import('react').ReactNode;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:62:        {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:100:  const [draftHasChild, setDraftHasChild] = useState<boolean>(false);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:101:  const [draftChildAgeGroup, setDraftChildAgeGroup] = useState<string>('');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:153:    booking?.room?.room_type?.name ?? 'Unknown Type';
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:297:                          Extra Beds
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:322:                        Extra Beds: {booking?.extra_bed_label} — {formatCurrency(extraBedCost)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:354:                          checked={draftHasChild}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:355:                          onChange={(e) => setDraftHasChild(e.target.checked)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:357:                        Has Child
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:360:                      {draftHasChild && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:363:                            Child Age Group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:366:                            value={draftChildAgeGroup}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:367:                            onChange={(e) => setDraftChildAgeGroup(e.target.value)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:399:                        Children on reservation:{' '}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:400:                        {booking?.has_child ? 'Yes' : 'No'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:402:                      {booking?.has_child && booking?.child_age_group ? (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:403:                        <p>Child age group: {booking.child_age_group}</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:431:                  setDraftRoomTypeName(booking.room?.room_type?.name ?? '');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:433:                  setDraftHasChild(Boolean(booking.has_child));
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:434:                  setDraftChildAgeGroup(booking.child_age_group ?? '');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:456:                disabled={actionLoading || (booking.has_child && !booking.child_age_group)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:458:                  if (booking.has_child && !booking.child_age_group) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:464:                  // If your backend exposes a receipt verification flag, integrate it here.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:473:                  booking.has_child && !booking.child_age_group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:485:                disabled={actionLoading || (booking.has_child && !booking.child_age_group)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:487:                  if (booking.has_child && !booking.child_age_group) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:493:                  booking.has_child && !booking.child_age_group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:520:                  if (draftHasChild && !draftChildAgeGroup.trim()) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:521:                    setDraftError('Selected Party is incomplete: child_age_group is required.');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:537:                      has_child: draftHasChild,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:538:                      child_age_group: draftHasChild && draftChildAgeGroup.trim() ? draftChildAgeGroup.trim() : null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:18:  const [cleaningHistory, setCleaningHistory] = useState<any[]>([]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:28:        // CLEANING HISTORY (WITH ROOM + ROOM TYPE)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:30:        const { data: tasks, error } = await supabase
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:31:          .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:45:              room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:46:              room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:52:          .eq("room_id", room.id) // ?? change here if you later want room_type filtering
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:62:            (tasks ?? [])
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:84:        const enrichedTasks =
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:85:          tasks?.map((t) => ({
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:93:            room_type_name:
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:94:              t.rooms?.[0]?.room_types?.[0]?.name || "Unknown Type"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:97:        setCleaningHistory(enrichedTasks);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:118:              Room Type: {room?.room_type?.name || "Unknown"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:137:                ?? Cleaning History
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:140:              {cleaningHistory.length === 0 ? (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:142:                  No cleaning history found
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:147:                  {cleaningHistory.map((task) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:149:                      key={task.id}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:155:                          Task #{task.id}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:159:                          {task.status}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:169:                            {task.room_type_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:174:                          ?? Started: {formatDateTime(task.started_at)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:178:                          ? Completed: {formatDateTime(task.completed_at)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:184:                            {task.assigned_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:191:                            {task.completed_by_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:195:                        {task.note && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:197:                            ?? {task.note}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:146:                  r?.room?.room_type?.name ?? "Unknown Type";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:26:  room_type: RoomType | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:78:      if (!r.room_type) return;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:80:      map.set(r.room_type.id, {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:81:        id: r.room_type.id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:82:        name: r.room_type.name,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:96:      (r) => r.room_type?.id === selectedRoom
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\DangerButton.tsx:6:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\DangerButton.tsx:19:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:6:    PropsWithChildren,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:22:const Dropdown = ({ children }: PropsWithChildren) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:31:            <div className="relative">{children}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:36:const Trigger = ({ children }: PropsWithChildren) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:41:            <div onClick={toggleOpen}>{children}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:57:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:58:}: PropsWithChildren<{
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:100:                        {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:110:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Dropdown.tsx:121:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\InputLabel.tsx:6:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\InputLabel.tsx:17:            {value ? value : children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:5:    TransitionChild,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:7:import { PropsWithChildren } from 'react';
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:10:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:15:}: PropsWithChildren<{
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:43:                <TransitionChild
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:52:                </TransitionChild>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:54:                <TransitionChild
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:65:                        {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Modal.tsx:67:                </TransitionChild>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\NavLink.tsx:6:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\NavLink.tsx:20:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\PrimaryButton.tsx:6:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\PrimaryButton.tsx:19:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\ProtectedLayout.tsx:8:  children, 
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\ProtectedLayout.tsx:11:  children: React.ReactNode; 
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\ProtectedLayout.tsx:45:          {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RequireRole.tsx:6:export type Role = 'super_admin' | 'admin' | 'reservation' | 'frontoffice' | 'housekeeper';
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RequireRole.tsx:13:  children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RequireRole.tsx:16:  children: ReactNode;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RequireRole.tsx:141:  return <>{children}</>;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\ResponsiveNavLink.tsx:6:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\ResponsiveNavLink.tsx:18:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RoomModal.tsx:33:        setRoomTypeId(room.room_types?.id ?? null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RoomModal.tsx:54:        room_type_id: roomTypeId,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RoomModal.tsx:132:            <option value="needs_cleaning">Needs cleaning</option>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RoomModal.tsx:133:            <option value="cleaning">Cleaning</option>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\SecondaryButton.tsx:7:    children,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\SecondaryButton.tsx:21:            {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Sidebar.tsx:77:    { id: 'dashboard', label: 'Dashboard', icon: '?', allowedRoles: ['super_admin', 'admin', 'reservation', 'frontoffice', 'housekeeper'] },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Sidebar.tsx:81:    { id: 'room', label: 'Room', icon: '??', allowedRoles: ['super_admin', 'admin', 'frontoffice', 'housekeeper'] },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\context\SidebarContext.tsx:12:export function SidebarProvider({ children }: { children: ReactNode }) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\context\SidebarContext.tsx:34:      {children}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\helpers\date.helpers.ts:2:  DATE FIX (ROOM + TASK SAFE FORMAT)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:77:    REALTIME SYNC (OPTION 1: SAFE REFRESH STRATEGY)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:13:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:20:  room_type: RoomType | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:64:    room_type: Array.isArray(r.room_types)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:65:      ? r.room_types[0] ?? null
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:66:      : r.room_types ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:102:        room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:105:          capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:9:export interface TaskItem {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:17:export interface Task {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:25:    housekeeping_task_items?: TaskItem[];
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:30:      room_type?: {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:41:  room_type_id?: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:42:  room_type?: {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:51:  DATE SAFETY HELPERS (NEW - SAFE FOR CLEANING TIME)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:83:  const [tasks, setTasks] = useState<Task[]>([]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:84:  const [selectedTask, setSelectedTask] = useState<Task | null>(null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:107:      if (room.room_type) return room as Room;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:110:        (t) => t.id === room.room_type_id
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:115:        room_type: foundType ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:128:      const [roomsData, typesData, amenitiesData, tasksData] =
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:133:          RoomService.getHousekeepingTasks(),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:146:      setTasks((tasksData ?? []) as Task[]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:161:    REFRESH TASKS
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:163:  const refreshTasks = useCallback(async () => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:168:      const tasksData = await RoomService.getHousekeepingTasks();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:171:      setTasks((tasksData ?? []) as Task[]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:174:      setError(err?.message || "Failed to refresh tasks");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:211:          (t) => t.id === newRoom.room_type_id
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:215:          { ...newRoom, room_type: type ?? null } as Room,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:230:          (t) => t.id === updated.room_type_id
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:236:              ? { ...room, ...updated, room_type: type ?? null } as Room
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:251:        const type = roomTypes.find((t) => t.id === updated.room_type_id);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:256:              ? { ...room, ...updated, room_type: type ?? null } as Room
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:277:    HOUSEKEEPING
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:280:  const startCleaning = useCallback(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:281:    (taskId: number) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:283:        const updatedTask = await RoomService.startCleaning(taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:287:        setTasks((prev) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:288:          prev.map((task) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:289:            task.id === taskId
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:291:                  ...task,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:292:                  ...updatedTask,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:295:                    updatedTask.started_at ?? new Date().toISOString(),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:296:                } as Task
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:297:              : task
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:310:  const openTask = useCallback(async (taskId: number) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:312:      const task = await RoomService.getTaskById(taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:315:      setSelectedTask(task as Task);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:318:      setError(err?.message || "Failed to load task");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:329:        setSelectedTask((prev) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:334:            housekeeping_task_items:
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:335:              prev.housekeeping_task_items?.map((item) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:351:    COMPLETE CLEANING
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:354:  const completeCleaning = useCallback(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:355:    (taskId: number, note?: string) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:357:        await RoomService.completeCleaning(taskId, note);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:361:        setSelectedTask(null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:370:    tasks,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:371:    selectedTask,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:380:    refresh: refreshTasks,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:381:    setSelectedTask,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:387:    startCleaning,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:388:    openTask,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:390:    completeCleaning,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:27:      // Room type editing in this UI maps to room_id/room_type.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:29:      // If your schema stores room_type_id instead, adjust accordingly.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:35:      has_child?: boolean | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:36:      child_age_group?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:82:      has_child: payload.has_child ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:83:      child_age_group: payload.child_age_group ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:115:          room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:117:          room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:121:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:154:    if (extraBeds === 1) return "1 Extra Bed";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:155:    if (extraBeds === 2) return "2 Extra Beds";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:156:    return "No Extra Bed";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:256:          room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:258:          room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:262:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:301:          room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:303:          room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:307:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:368:          room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:370:          room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:374:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:391:      await this.generateHousekeepingFromTemplate(data);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:405:          has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:408:          child_age_group,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:423:            room_type_id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:424:            room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:427:              capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:447:    HOUSEKEEPING ENGINE
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:449:  private static async generateHousekeepingFromTemplate(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:456:      .select("room_type_id")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:463:      .from("housekeeping_templates")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:465:      .eq("room_type_id", room.room_type_id)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:470:    const { data: task } = await supabase
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:471:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:481:    if (!task) return;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:484:      .from("housekeeping_template_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:490:    await supabase.from("housekeeping_task_items").insert(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:492:        task_id: task.id,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:501:      .update({ status: "needs_cleaning" })
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:512:  const roomType = room?.room_types;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:530:      room_type_name: roomType?.name ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:531:      room_type_id: roomType?.id ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:532:      room_capacity: roomType?.capacity ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:551:    has_child: booking.has_child ?? false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:554:    child_age_group: booking.child_age_group ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:578:    const roomType = room?.room_types ?? null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:600:            room_type: roomType,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:606:      room_type_name: roomType?.name ?? "Unknown Type",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:4:  DATE HELPERS (NEW – SAFE CLEANING TIME HANDLING)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:55:    room_type:
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:56:      roomTypes.find((t) => t.id === room.room_type_id) ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:72:        .select(`*, room_types (id, name, capacity, base_price, description, room_amenities (amenities (id, name))), room_images (id, image_url, display_order)`)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:75:      supabase.from("room_types").select("*"),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:94:        .select(`*, room_types (*, room_amenities (amenities (id, name))), room_images (*)`)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:98:      supabase.from("room_types").select("*"),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:160:    ?? HOUSEKEEPING TASKS
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:163:  async getHousekeepingTasks() {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:165:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:172:          room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:175:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:179:        housekeeping_task_items (*),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:186:      throw new Error(`[getHousekeepingTasks] ${error.message}`);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:191:  async getTaskById(taskId: number) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:193:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:196:        housekeeping_task_items (*),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:200:          room_types (id, name)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:204:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:208:      throw new Error(`[getTaskById] ${error.message}`);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:228:    START CLEANING (stores START time)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:231:  async startCleaning(taskId: number) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:235:    const { data: existingTask } = await supabase
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:236:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:238:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:241:    if (!existingTask) throw new Error("Task not found");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:244:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:248:        started_at: existingTask.started_at ?? now,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:250:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:255:      throw new Error(`[startCleaning] ${error.message}`);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:260:        .update({ status: "cleaning" })
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:277:      .from("housekeeping_task_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:289:    COMPLETE CLEANING (stores END time + duration)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:292:  async completeCleaning(taskId: number, note?: string) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:296:    const { data: task, error } = await supabase
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:297:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:299:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:303:      throw new Error(`[completeCleaning] ${error.message}`);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:305:    const start = new Date(task.started_at).getTime();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:314:      .from("housekeeping_tasks")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:318:        completed_at: now,          // ? CLEANING END TIME
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:322:      .eq("id", taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:325:      throw new Error(`[completeCleaning-update] ${updateError.message}`);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:327:    if (task.room_id) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:331:        .eq("id", task.room_id);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:339:      .from("housekeeping_templates")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:342:        housekeeping_template_items (*)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:344:      .eq("room_type_id", roomTypeId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:355:      .from("housekeeping_templates")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:357:        room_type_id: roomTypeId,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:371:      .from("housekeeping_template_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:387:      .from("room_types")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:436:      .from("housekeeping_template_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:453:      .from("housekeeping_template_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:467:      .from("housekeeping_template_items")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:30:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:44:  room_type: RoomType;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\date.ts:2:  DATE HELPERS (SAFE FOR BOOKINGS + HOUSEKEEPING)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:69:      booking?.room?.room_type?.name || "Room";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:81:        ? "1 Extra Bed"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:83:        ? "2 Extra Beds"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:84:        : "No Extra Bed";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:140:          <p><strong>Extra Bed:</strong> ${extraBeds}</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:16:  room_type_name: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:31:  has_child?: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:65:           room_type_name,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:79:           has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:186:                                {booking.room_type_name || 'Unknown Type'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Dashboard\Index.tsx:101:                room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Dashboard\Index.tsx:123:                room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Dashboard\Index.tsx:156:    booking?.rooms?.room_types?.name ?? 'Unknown Type';
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:23:  has_child: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:24:  child_age_group: string;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:32:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:52:  has_child: false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:53:  child_age_group: '',
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:117:            capacity: type.capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:212:      has_child: booking.has_child ?? false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:213:      child_age_group: booking.child_age_group ?? '',
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:276:          has_child: editForm.has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:277:          child_age_group: editForm.child_age_group || null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:313:      setReceiptError(err?.message || 'Could not generate receipt preview.');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:407:                              <div>{booking.room?.room_type?.name ?? 'Unknown Room'}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:524:                              {roomType.name} — capacity {roomType.capacity}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:542:                          <label className="block text-sm font-medium text-gray-700">Extra beds</label>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:557:                            checked={editForm.has_child}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:558:                            onChange={(e) => setEditForm({ ...editForm, has_child: e.target.checked })}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:560:                          Has child
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:582:                          <label className="block text-sm font-medium text-gray-700">Child age group</label>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:584:                            value={editForm.child_age_group}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:585:                            onChange={(e) => setEditForm({ ...editForm, child_age_group: e.target.value })}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:95:          room_type:room_types (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:98:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:6:import { useRoomManagement, type Room, type Task } from "@/app/hooks/useRoomManagement";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:9:import HousekeepingModal from "@/app/components/modals/CheckListModal";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:19:  cleaning: "bg-yellow-100 text-yellow-700",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:21:  needs_cleaning: "bg-orange-100 text-orange-700",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:27:const taskColors: Record<string, string> = {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:40:  const [selectedTask, setSelectedTask] = useState<Task | null>(null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:41:  const [tab, setTab] = useState<"inventory" | "housekeeping">("inventory");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:46:    tasks,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:49:    startCleaning,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:50:    openTask,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:52:    completeCleaning,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:63:  const lastCleaningMap = useMemo(() => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:66:    tasks
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:67:      ?.filter((task) => task.status === "completed")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:68:      .forEach((task) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:69:        if (task.room_id && !map[task.room_id]) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:70:          map[task.room_id] = task;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:75:  }, [tasks]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:77:  const groupedTasks = useMemo(() => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:78:    const groups: Record<string, Task[]> = {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:84:    tasks.forEach((task) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:85:      const typeName = task.rooms?.room_type?.name?.toLowerCase() ?? "";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:92:      groups[group].push(task);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:96:  }, [tasks]);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:119:    <RequireRole allowedRoles={["frontoffice", "housekeeper", "super_admin", "admin"]}>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:131:                  Manage rooms, housekeeping requests and room status.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:155:              {(["inventory", "housekeeping"] as const).map((option) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:166:                  {option === "inventory" ? "Room Inventory" : "Housekeeping"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:186:                          const lastClean = lastCleaningMap[room.id];
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:187:                          const roomTypeName = room.room_type?.name || "No Room Type";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:188:                          const isDirty = room.status === "needs_cleaning" || room.status === "dirty";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:275:                      <h2 className="font-semibold mb-3">Housekeeping Requests</h2>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:285:                            const isDirty = room.status === "needs_cleaning" || room.status === "cleaning";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:301:                                      <p className="text-xs text-gray-500">{room.room_type?.name ?? "No Room Type"}</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:363:                      <h2 className="font-semibold mb-3">Tasks by Room Type</h2>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:365:                        {Object.entries(groupedTasks).map(([groupName, groupTasks]) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:369:                              <span className="text-xs text-gray-500">{groupTasks.length} tasks</span>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:372:                            {groupTasks.length === 0 ? (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:373:                              <div className="text-sm text-gray-500">No tasks in this category</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:376:                                {groupTasks.map((task) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:377:                                  <div key={task.id} className="rounded-2xl border border-gray-100 p-3">
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:381:                                          {task.rooms?.room_number ? `Room ${task.rooms.room_number}` : "Room request"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:384:                                          {task.rooms?.room_type?.name ?? "Unknown type"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:388:                                        {task.status ?? "pending"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:393:                                      {task.note ?? "No special notes"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:397:                                      {task.status === "pending" && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:399:                                          onClick={() => startCleaning(task.id)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:402:                                          Start cleaning
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:405:                                      {task.status === "in_progress" && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:407:                                          onClick={() => openTask(task.id)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:413:                                      {task.status === "completed" && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:415:                                          onClick={() => openTask(task.id)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:437:        <HousekeepingModal
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:438:          task={selectedTask}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:439:          onClose={() => setSelectedTask(null)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:441:          onComplete={completeCleaning}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Welcome.tsx:60:      const allowedRoles = ["admin", "super_admin", "frontoffice", "reservation", "housekeeper"];
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Welcome.tsx:76:      if (role === "housekeeper") {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:35:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:51:  room_type?: BookingRoomType | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:96:  has_child: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:100:  child_age_group?: string | null;

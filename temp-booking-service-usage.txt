@@ -1,0 +1,17 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:119:        const data = await BookingService.getById(bookingId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:314:                          Fee preview: {formatCurrency(BookingService.getExtraBedFee(Number(draftExtraBeds || 0)))}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:57:      const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:86:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:95:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:104:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:161:        BookingService.updateStatus(id, "approved", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:169:        BookingService.updateStatus(id, "checked_in", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:177:        BookingService.updateStatus(id, "checked_out", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:187:      runAction(() => BookingService.updateBookingDetails(id, payload) as any),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:126:        BookingService.getAll(),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:21:  static async updateBookingDetails(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:108:          BookingService.getAll(),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:137:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:145:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:153:          const data = await BookingService.getAll();
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:268:      const updatedBooking = await BookingService.updateBookingDetails(

@@ -1,0 +1,2 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:133:      console.log("?? BOOKINGS AFTER MAP:", mappedBookings);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:136:      setAvailability(mappedBookings);

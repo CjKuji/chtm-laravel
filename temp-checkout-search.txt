@@ -1,0 +1,70 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:11:  checked_out_at: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:21:  checked_out_by?: any;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:24:  checked_out_by_user?: any;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:27:  checked_out_by_user_id?: any;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:80:    booking.checked_out_by_user ??
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:81:      booking.checked_out_by ??
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:82:      booking.checked_out_by_user_id
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:191:                  {formatDate(booking.checked_out_at)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:283:              checkout and archived for reporting purposes.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:80:          <div class="value">${formatDate(booking.checked_out_at)}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:71:    booking.checked_out_by_user ??
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:72:      booking.checked_out_by ??
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:73:      booking.checked_out_by_user_id
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:149:                <span className="font-semibold">{formatDate(booking.checked_out_at)}</span>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:31:    checked_out: 'bg-gray-100 text-gray-700 ring-gray-200',
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:75:  onCheckOut: (id: number) => void | Promise<void>;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:89:  onCheckOut,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:170:  const checkedOutAt = booking?.checked_out_at;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:506:                onClick={() => runAction(() => onCheckOut(booking.id))}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:8:  onCheckOut: (id: number) => void;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:25:    case "checked_out":
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:42:  onCheckOut,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:48:  onCheckOut: (id: number) => void;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:95:          onClick={() => onCheckOut(booking.id)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:115:  onCheckOut,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:173:                      {r?.checked_out_at
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:174:                        ? new Date(r.checked_out_at).toLocaleDateString()
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTable.tsx:190:                        onCheckOut={onCheckOut}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\ReservationTabs.tsx:15:    { id: "checked_out", label: "Checked Out" },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:14:  checked_out_at?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:162:          CHECKOUT EXCLUSION
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\reservations\RoomAvailabilityCalendar.tsx:164:        if (b.status === "checked_out") {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:161:        BookingService.updateStatus(id, "approved", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:169:        BookingService.updateStatus(id, "checked_in", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:174:  const checkOut = useCallback(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:177:        BookingService.updateStatus(id, "checked_out", userId!)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useReservation.ts:203:    checkOut,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:33:  checked_out_at: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:83:      checked_out_at: b.checked_out_at ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:242:        checked_out_at,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:329:  static async updateStatus(
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:346:    if (status === "checked_out") {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:347:      update.checked_out_by = actorId ?? null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:348:      update.checked_out_at = now;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:390:    if (status === "checked_out") {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:410:          checked_out_at,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:417:          checked_out_by,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:540:      checked_out_at: booking.checked_out_at ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:562:    checked_out_by: booking.checked_out_by ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:74:  early_checkout_at?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:21:  checked_out_at: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:30:  checked_out_by_user?: any;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:70:           checked_out_at,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:78:           checked_out_by,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:86:        .order('checked_out_at', { ascending: false });
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Dashboard\Index.tsx:94:              checked_out_at,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Dashboard\Index.tsx:108:            .is('checked_out_at', null),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:51:    checkOut,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:89:        checked_out_by_user:users!checked_out_by (id, fname, lname),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:133:  const handleCheckOut = (id: number) => handleAction(checkOut, id);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:223:              onCheckOut={handleCheckOut}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:250:        onCheckOut={handleCheckOut}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:114:    if ((room as any).checkout_requested) badges.push("Check-out requested");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:334:                                      { key: "checkout_requested", label: "Check-out requested" },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Settings\Index.tsx:7:type NotificationKey = 'checkIns' | 'checkOuts' | 'reservations' | 'ratings';
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Settings\Index.tsx:12:  checkOuts: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Settings\Index.tsx:46:    checkOuts: true,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Settings\Index.tsx:71:    { key: 'checkOuts', label: 'Check-outs' },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:91:  checked_out_at?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\enums.types.ts:29:  | "checked_out"

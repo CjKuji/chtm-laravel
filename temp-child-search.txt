@@ -1,0 +1,20 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\CheckListModal.tsx:26:  onComplete: (taskId: number, note?: string) => void;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:363:                            Child Age Group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:403:                        <p>Child age group: {booking.child_age_group}</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:281:    (taskId: number) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:283:        const updatedTask = await RoomService.startCleaning(taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:289:            task.id === taskId
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:310:  const openTask = useCallback(async (taskId: number) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:312:      const task = await RoomService.getTaskById(taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:355:    (taskId: number, note?: string) =>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomManagement.ts:357:        await RoomService.completeCleaning(taskId, note);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:191:  async getTaskById(taskId: number) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:204:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:231:  async startCleaning(taskId: number) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:238:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:250:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:292:  async completeCleaning(taskId: number, note?: string) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:299:      .eq("id", taskId)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:322:      .eq("id", taskId);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:582:                          <label className="block text-sm font-medium text-gray-700">Child age group</label>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:587:                            placeholder="e.g. 6-12 years"

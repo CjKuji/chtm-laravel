@@ -1,0 +1,1 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:50:  guests: 1,

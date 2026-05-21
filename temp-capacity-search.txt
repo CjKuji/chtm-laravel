@@ -1,0 +1,126 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:7:  room_type_name: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:17:  extra_beds?: number | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:28:  has_child?: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:105:            {booking.has_child && (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:150:                {booking.room_type_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPanel.tsx:222:                  {booking.extra_beds ?? 0}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:65:          <div class="value">${booking.room_number ?? '—'}${booking.room_type_name ? ` · ${booking.room_type_name}` : ''}</div>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\Folio\ArchivedFolioPrintButton.tsx:101:              <tr><td>Extra Beds</td><td style="text-align:right; font-weight:700;">${booking.extra_beds ?? 0}</td></tr>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:49:    booking.room_type_name ||
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:80:  const extraBeds = booking.extra_beds ?? 0;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:208:                  booking.has_child ? 'bg-blue-100 text-blue-700' : 'bg-gray-200 text-gray-600'
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ArchivedModal.tsx:210:                  {booking.has_child ? 'YES' : 'NO'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:158:  const extraBedCost = booking?.extra_bed_fee ?? 0;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:322:                        Extra Beds: {booking?.extra_bed_label} — {formatCurrency(extraBedCost)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:400:                        {booking?.has_child ? 'Yes' : 'No'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:402:                      {booking?.has_child && booking?.child_age_group ? (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:403:                        <p>Child age group: {booking.child_age_group}</p>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:429:                  setDraftExtraBeds(booking.extra_beds ?? '');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:433:                  setDraftHasChild(Boolean(booking.has_child));
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:434:                  setDraftChildAgeGroup(booking.child_age_group ?? '');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:456:                disabled={actionLoading || (booking.has_child && !booking.child_age_group)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:458:                  if (booking.has_child && !booking.child_age_group) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:473:                  booking.has_child && !booking.child_age_group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:485:                disabled={actionLoading || (booking.has_child && !booking.child_age_group)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:487:                  if (booking.has_child && !booking.child_age_group) {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:493:                  booking.has_child && !booking.child_age_group
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:521:                    setDraftError('Selected Party is incomplete: child_age_group is required.');
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:534:                      extra_beds:
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:537:                      has_child: draftHasChild,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\ReservationModal.tsx:538:                      child_age_group: draftHasChild && draftChildAgeGroup.trim() ? draftChildAgeGroup.trim() : null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:93:            room_type_name:
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\modals\RoomHistoryModal.tsx:169:                            {task.room_type_name}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:13:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:14:  base_price: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:105:          capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\hooks\useRoomAvailability.ts:106:          base_price
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:33:      extra_beds?: number | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:35:      has_child?: boolean | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:36:      child_age_group?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:54:        "user_id, price_at_booking, guests, extra_beds, has_pwd, has_senior, start_at, end_at"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:81:      extra_beds: payload.extra_beds ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:82:      has_child: payload.has_child ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:83:      child_age_group: payload.child_age_group ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:91:      extra_beds: payload.extra_beds ?? existingBooking?.extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:120:            description,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:121:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:122:            base_price,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:143:  private static EXTRA_BED_PRICE: Record<number, number> = {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:150:    return this.EXTRA_BED_PRICE[extraBeds] ?? 0;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:178:    extra_beds?: number | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:186:    const extraBeds = Number(params.extra_beds ?? 0);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:234:        extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:261:            description,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:262:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:263:            base_price,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:306:            description,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:307:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:308:            base_price,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:373:            description,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:374:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:375:            base_price
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:404:          extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:405:          has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:408:          child_age_group,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:427:              capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:428:              base_price
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:517:      extra_beds: booking.extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:530:      room_type_name: roomType?.name ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:532:      room_capacity: roomType?.capacity ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:533:      room_base_price: roomType?.base_price ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:549:    extra_beds: booking.extra_beds ?? 0,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:551:    has_child: booking.has_child ?? false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:554:    child_age_group: booking.child_age_group ?? null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:583:      extra_beds: b?.extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:606:      room_type_name: roomType?.name ?? "Unknown Type",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:610:      extra_bed_fee: this.getExtraBedFee(b?.extra_beds ?? 0),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:611:      extra_bed_label: this.getExtraBedLabel(b?.extra_beds ?? 0),
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:72:        .select(`*, room_types (id, name, capacity, base_price, description, room_amenities (amenities (id, name))), room_images (id, image_url, display_order)`)
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:175:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\room.service.ts:176:            base_price
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:29:  description?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:30:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\types.ts:31:  base_price: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:80:      booking?.extra_beds === 1
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\lib\email.ts:82:        : booking?.extra_beds === 2
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:16:  room_type_name: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:31:  has_child?: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:35:  extra_beds?: number | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:65:           room_type_name,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:79:           has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:83:           extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Archived\Index.tsx:186:                                {booking.room_type_name || 'Unknown Type'}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:22:  extra_beds: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:23:  has_child: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:24:  child_age_group: string;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:32:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:51:  extra_beds: 0,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:52:  has_child: false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:53:  child_age_group: '',
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:117:            capacity: type.capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:211:      extra_beds: booking.extra_beds ?? 0,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:212:      has_child: booking.has_child ?? false,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:213:      child_age_group: booking.child_age_group ?? '',
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:275:          extra_beds: editForm.extra_beds,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:276:          has_child: editForm.has_child,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:277:          child_age_group: editForm.child_age_group || null,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:524:                              {roomType.name} — capacity {roomType.capacity}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:546:                            value={editForm.extra_beds}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:547:                            onChange={(e) => setEditForm({ ...editForm, extra_beds: Number(e.target.value) })}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:557:                            checked={editForm.has_child}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:558:                            onChange={(e) => setEditForm({ ...editForm, has_child: e.target.checked })}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:584:                            value={editForm.child_age_group}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:585:                            onChange={(e) => setEditForm({ ...editForm, child_age_group: e.target.value })}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:98:            capacity,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Reservation\Index.tsx:99:            base_price,
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:80:      Standard: [],
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:88:        : typeName.includes("standard")
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:89:        ? "Standard"
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:34:  description?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:35:  capacity: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:36:  base_price: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:84:  extra_beds: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:96:  has_child: boolean;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:100:  child_age_group?: string | null;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:120:  extra_bed_fee: number;
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\types\booking.types.ts:121:  extra_bed_label: string;

@@ -1,0 +1,29 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\components\RoomModal.tsx:132:            <option value="needs_cleaning">Needs cleaning</option>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\app\services\booking.service.ts:501:      .update({ status: "needs_cleaning" })
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:21:  needs_cleaning: "bg-orange-100 text-orange-700",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:24:  do_not_disturb: "bg-pink-100 text-pink-700",
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:42:  const [requestLoading, setRequestLoading] = useState<number | null>(null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:98:  const toggleRoomRequest = async (room: Room, flag: string) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:102:    setRequestLoading(room.id);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:106:      setRequestLoading(null);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:110:  const renderRequestBadge = (room: Room) => {
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:112:    if ((room as any).do_not_disturb) badges.push("Do Not Disturb");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:113:    if ((room as any).make_up_room) badges.push("Make up room");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:114:    if ((room as any).checkout_requested) badges.push("Check-out requested");
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:131:                  Manage rooms, housekeeping requests and room status.
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:188:                          const isDirty = room.status === "needs_cleaning" || room.status === "dirty";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:232:                                    {renderRequestBadge(room).map((badge) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:275:                      <h2 className="font-semibold mb-3">Housekeeping Requests</h2>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:284:                            const requestBadges = renderRequestBadge(room);
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:285:                            const isDirty = room.status === "needs_cleaning" || room.status === "cleaning";
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:317:                                    {requestBadges.length > 0 ? (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:318:                                      requestBadges.map((badge) => (
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:325:                                        No guest requests
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:332:                                      { key: "do_not_disturb", label: "Do Not Disturb" },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:333:                                      { key: "make_up_room", label: "Make up room" },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:334:                                      { key: "checkout_requested", label: "Check-out requested" },
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:341:                                          onClick={() => toggleRoomRequest(room, option.key)}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:342:                                          disabled={requestLoading === room.id}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:349:                                          {requestLoading === room.id ? "Updating..." : `${active ? "Clear" : "Set"} ${option.label}`}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Room\Index.tsx:381:                                          {task.rooms?.room_number ? `Room ${task.rooms.room_number}` : "Room request"}
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\bootstrap.ts:4:window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

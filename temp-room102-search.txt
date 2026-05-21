@@ -1,0 +1,2 @@
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\FrontOffice\Index.tsx:658:                          <td className="px-4 py-3 text-gray-700">{(file.size / 1024).toFixed(1)} KB</td>
+C:\Users\luisc\OneDrive\Desktop\chtm-admin-1-main\resources\js\Pages\Settings\Index.tsx:36:      setIsTablet(width >= 640 && width < 1024);
