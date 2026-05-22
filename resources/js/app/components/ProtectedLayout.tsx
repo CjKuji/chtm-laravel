@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 import { useSidebar } from '@/app/context/SidebarContext';
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 export default function ProtectedLayout({ 
   children, 
   activeMenu 

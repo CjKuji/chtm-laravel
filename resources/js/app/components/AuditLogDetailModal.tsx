@@ -1,4 +1,4 @@
-import { AuditLogRow } from '../services/auditService';
+import { AuditLogRow } from '@/app/services/audit.service';
 
 interface Props {
   log: AuditLogRow | null;

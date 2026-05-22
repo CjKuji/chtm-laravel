@@ -1,4 +1,4 @@
-import { OccupancyRow } from '../services/auditService';
+import { OccupancyRow } from '@/app/services/audit.service';
 
 interface Props {
   rows: OccupancyRow[];

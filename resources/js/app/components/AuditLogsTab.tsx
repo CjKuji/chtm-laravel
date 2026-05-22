@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AuditLogRow } from '../services/auditService';
+import { AuditLogRow } from '@/app/services/audit.service';
 
 interface Props {
   logs: AuditLogRow[];
@@ -12,16 +12,23 @@ interface Props {
 
 const PAGE_SIZE = 20;
 
-const actionColors: Record<string, string> = {
-  INSERT: 'bg-emerald-100 text-emerald-800',
-  UPDATE: 'bg-amber-100 text-amber-800',
-  DELETE: 'bg-red-100 text-red-800',
-  LOGIN: 'bg-blue-100 text-blue-800',
-  LOGOUT: 'bg-gray-100 text-gray-800',
-  APPROVE: 'bg-teal-100 text-teal-800',
-  REJECT: 'bg-rose-100 text-rose-800',
-  CHECK_IN: 'bg-indigo-100 text-indigo-800',
-  CHECK_OUT: 'bg-purple-100 text-purple-800',
+type ActionStyle = { badge: string; icon: string };
+
+const actionStyles: Record<string, ActionStyle> = {
+  INSERT:    { badge: 'bg-green-50 text-green-800 border-green-200',   icon: 'ti-plus'        },
+  UPDATE:    { badge: 'bg-amber-50 text-amber-800 border-amber-200',   icon: 'ti-edit'        },
+  DELETE:    { badge: 'bg-red-50 text-red-800 border-red-200',         icon: 'ti-trash'       },
+  LOGIN:     { badge: 'bg-blue-50 text-blue-800 border-blue-200',      icon: 'ti-login'       },
+  LOGOUT:    { badge: 'bg-gray-100 text-gray-700 border-gray-200',     icon: 'ti-logout'      },
+  APPROVE:   { badge: 'bg-teal-50 text-teal-800 border-teal-200',      icon: 'ti-check'       },
+  REJECT:    { badge: 'bg-rose-50 text-rose-800 border-rose-200',      icon: 'ti-x'           },
+  CHECK_IN:  { badge: 'bg-indigo-50 text-indigo-800 border-indigo-200',icon: 'ti-door-enter'  },
+  CHECK_OUT: { badge: 'bg-purple-50 text-purple-800 border-purple-200',icon: 'ti-door-exit'   },
+};
+
+const fallbackStyle: ActionStyle = {
+  badge: 'bg-gray-100 text-gray-600 border-gray-200',
+  icon: 'ti-activity',
 };
 
 export default function AuditLogsTab({ logs, count, page, setPage, loading, onViewDetail }: Props) {
@@ -40,7 +47,7 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
     return (
       <div className="space-y-2 animate-pulse">
         {Array.from({ length: 10 }).map((_, i) => (
-          <div key={i} className="h-12 bg-gray-100 rounded-xl" />
+          <div key={i} className="h-12 bg-gray-100 rounded-lg" />
         ))}
       </div>
     );
@@ -48,58 +55,77 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
 
   return (
     <div className="space-y-4">
-      {/* Filters Row */}
-      <div className="flex flex-wrap gap-3">
-        <input
-          placeholder="Filter by action (e.g. UPDATE)"
-          value={actionFilter}
-          onChange={(e) => setActionFilter(e.target.value)}
-          className="px-3 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
-        />
-        <input
-          placeholder="Filter by entity (e.g. bookings)"
-          value={entityFilter}
-          onChange={(e) => setEntityFilter(e.target.value)}
-          className="px-3 py-2 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white"
-        />
-        <span className="text-sm text-gray-500 self-center">
-          Showing {filtered.length} of {count} entries
+
+      {/* Filter row */}
+      <div className="flex flex-wrap items-center gap-3">
+        <div className="relative">
+          <i className="ti ti-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-[14px]" aria-hidden="true" />
+          <input
+            placeholder="Filter by action…"
+            value={actionFilter}
+            onChange={(e) => setActionFilter(e.target.value)}
+            className="pl-8 pr-3 py-2 border border-gray-200 rounded-lg text-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:border-transparent w-48"
+          />
+        </div>
+        <div className="relative">
+          <i className="ti ti-filter absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-[14px]" aria-hidden="true" />
+          <input
+            placeholder="Filter by entity…"
+            value={entityFilter}
+            onChange={(e) => setEntityFilter(e.target.value)}
+            className="pl-8 pr-3 py-2 border border-gray-200 rounded-lg text-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-700 focus:border-transparent w-48"
+          />
+        </div>
+        <span className="text-xs text-gray-400 ml-1">
+          {filtered.length} of {count} entries
         </span>
       </div>
 
-      <div className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-        <div className="px-5 py-4 border-b border-gray-100">
-          <h3 className="font-bold text-gray-800">System Audit Trail</h3>
-          <p className="text-xs text-gray-500">All tracked changes within the selected period</p>
+      {/* Table card */}
+      <div className="border border-gray-200 rounded-2xl overflow-hidden">
+        <div className="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
+          <div>
+            <h3 className="text-sm font-medium text-gray-900">System Audit Trail</h3>
+            <p className="text-xs text-gray-400 mt-0.5">All tracked changes within the selected period</p>
+          </div>
+          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-lg">
+            <i className="ti ti-list-details text-gray-400 text-[14px]" aria-hidden="true" />
+            <span className="text-xs text-gray-500 font-medium">{count} total</span>
+          </div>
         </div>
 
         {filtered.length === 0 ? (
-          <div className="p-12 text-center text-gray-400">
-            <p className="text-4xl mb-3">📋</p>
-            <p>No audit logs found for this period</p>
+          <div className="py-16 flex flex-col items-center gap-3 text-gray-400">
+            <i className="ti ti-clipboard-x text-[36px] text-gray-300" aria-hidden="true" />
+            <p className="text-sm">No audit logs found for this period</p>
           </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">ID</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Action</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Entity</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Changed By</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Reason</th>
-                  <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Timestamp</th>
-                  <th className="px-4 py-3" />
+                  {['ID', 'Action', 'Entity', 'Changed By', 'Reason', 'Timestamp', ''].map((h) => (
+                    <th
+                      key={h}
+                      className={`px-4 py-3 text-[10px] font-medium text-gray-400 uppercase tracking-widest whitespace-nowrap
+                        ${h === '' || h === 'Timestamp' || h === 'ID' ? 'text-left' : 'text-left'}`}
+                    >
+                      {h}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {filtered.map((log) => {
-                  const colorClass = actionColors[log.action?.toUpperCase()] ?? 'bg-gray-100 text-gray-700';
+                  const style = actionStyles[log.action?.toUpperCase()] ?? fallbackStyle;
                   return (
                     <tr key={log.id} className="hover:bg-gray-50 transition-colors">
-                      <td className="px-4 py-3 text-gray-400 text-xs font-mono">#{log.id}</td>
+                      <td className="px-4 py-3 text-gray-400 text-xs font-mono">
+                        #{log.id}
+                      </td>
                       <td className="px-4 py-3">
-                        <span className={`px-2 py-0.5 rounded-full text-xs font-bold ${colorClass}`}>
+                        <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium border ${style.badge}`}>
+                          <i className={`ti ${style.icon} text-[11px]`} aria-hidden="true" />
                           {log.action}
                         </span>
                       </td>
@@ -109,18 +135,19 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
                           <span className="text-gray-400 text-xs ml-1">#{log.entity_id}</span>
                         )}
                       </td>
-                      <td className="px-4 py-3 text-gray-600">{log.changer_name ?? '—'}</td>
-                      <td className="px-4 py-3 text-gray-500 text-xs max-w-xs truncate">
+                      <td className="px-4 py-3 text-gray-600 text-xs">{log.changer_name ?? '—'}</td>
+                      <td className="px-4 py-3 text-gray-400 text-xs max-w-[200px] truncate">
                         {log.reason ?? '—'}
                       </td>
-                      <td className="px-4 py-3 text-gray-500 text-xs whitespace-nowrap">
+                      <td className="px-4 py-3 text-gray-400 text-xs whitespace-nowrap">
                         {new Date(log.created_at).toLocaleString()}
                       </td>
                       <td className="px-4 py-3">
                         <button
                           onClick={() => onViewDetail(log)}
-                          className="text-xs text-teal-600 hover:text-teal-800 font-medium px-2 py-1 rounded-lg hover:bg-teal-50 transition"
+                          className="inline-flex items-center gap-1 text-xs text-green-800 hover:text-green-900 font-medium px-2 py-1 rounded-md hover:bg-green-50 transition"
                         >
+                          <i className="ti ti-eye text-[12px]" aria-hidden="true" />
                           View
                         </button>
                       </td>
@@ -134,17 +161,18 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
 
         {/* Pagination */}
         {totalPages > 1 && (
-          <div className="px-5 py-4 border-t border-gray-100 flex items-center justify-between">
-            <span className="text-xs text-gray-500">
+          <div className="px-5 py-3 border-t border-gray-100 flex items-center justify-between">
+            <span className="text-xs text-gray-400">
               Page {page + 1} of {totalPages}
             </span>
-            <div className="flex gap-2">
+            <div className="flex gap-1.5">
               <button
                 disabled={page === 0}
                 onClick={() => setPage(page - 1)}
-                className="px-3 py-1.5 text-sm border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                className="inline-flex items-center gap-1 px-3 py-1.5 text-xs border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition text-gray-600"
               >
-                ← Prev
+                <i className="ti ti-chevron-left text-[12px]" aria-hidden="true" />
+                Prev
               </button>
               {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
                 const pageNum = Math.max(0, Math.min(page - 2, totalPages - 5)) + i;
@@ -152,11 +180,11 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
                   <button
                     key={pageNum}
                     onClick={() => setPage(pageNum)}
-                    className={`px-3 py-1.5 text-sm rounded-lg transition ${
-                      pageNum === page
-                        ? 'bg-teal-700 text-white'
-                        : 'border border-gray-200 hover:bg-gray-50'
-                    }`}
+                    className={`px-3 py-1.5 text-xs rounded-lg transition font-medium
+                      ${pageNum === page
+                        ? 'bg-green-800 text-white'
+                        : 'border border-gray-200 hover:bg-gray-50 text-gray-600'
+                      }`}
                   >
                     {pageNum + 1}
                   </button>
@@ -165,9 +193,10 @@ export default function AuditLogsTab({ logs, count, page, setPage, loading, onVi
               <button
                 disabled={page >= totalPages - 1}
                 onClick={() => setPage(page + 1)}
-                className="px-3 py-1.5 text-sm border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                className="inline-flex items-center gap-1 px-3 py-1.5 text-xs border border-gray-200 rounded-lg hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition text-gray-600"
               >
-                Next →
+                Next
+                <i className="ti ti-chevron-right text-[12px]" aria-hidden="true" />
               </button>
             </div>
           </div>

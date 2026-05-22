@@ -1,4 +1,10 @@
-import { AuditSummary, RevenueRow, RoomTypeBreakdown, OccupancyRow, GuestStats } from '../services/auditService';
+import {
+  AuditSummary,
+  RevenueRow,
+  RoomTypeBreakdown,
+  OccupancyRow,
+  GuestStats,
+} from '@/app/services/audit.service';
 
 interface Props {
   printRef: React.RefObject<HTMLDivElement>;
@@ -22,68 +28,101 @@ export default function PrintableReport({
   occupancyRows,
   guestStats,
 }: Props) {
-  const totalRevenue = revenueRows.reduce((s, r) => s + r.total_revenue, 0);
-  const totalBookings = revenueRows.reduce((s, r) => s + r.total_bookings, 0);
+  const totalRevenue   = revenueRows.reduce((s, r) => s + r.total_revenue, 0);
+  const totalBookings  = revenueRows.reduce((s, r) => s + r.total_bookings, 0);
   const totalCheckouts = revenueRows.reduce((s, r) => s + r.checked_out, 0);
   const totalCancelled = revenueRows.reduce((s, r) => s + r.cancelled, 0);
+  const totalCash      = revenueRows.reduce((s, r) => s + r.cash_revenue, 0);
+  const totalGCash     = revenueRows.reduce((s, r) => s + r.gcash_revenue, 0);
 
   return (
     <div ref={printRef} style={{ display: 'none' }}>
+      <style>{`
+        @media print {
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+          body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; color: #111; background: #fff; }
+
+          .pr-header { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px 32px 16px; border-bottom: 2px solid #166534; margin-bottom: 20px; }
+          .pr-hotel-name { font-size: 18px; font-weight: 700; color: #166534; }
+          .pr-hotel-sub { font-size: 11px; color: #6b7280; margin-top: 2px; }
+          .pr-meta { text-align: right; font-size: 11px; color: #6b7280; line-height: 1.6; }
+          .pr-meta strong { display: block; font-size: 13px; color: #111; margin-bottom: 2px; }
+
+          .pr-kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 0 32px 20px; }
+          .pr-kpi { background: #f9fafb; border: 0.5px solid #e5e7eb; border-radius: 8px; padding: 12px 14px; border-left: 3px solid #166534; }
+          .pr-kpi-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-bottom: 4px; }
+          .pr-kpi-value { font-size: 16px; font-weight: 600; color: #111; }
+          .pr-kpi-value.green { color: #166534; }
+          .pr-kpi-value.red { color: #b91c1c; }
+
+          .pr-section { padding: 0 32px 24px; }
+          .pr-section-title { font-size: 12px; font-weight: 600; color: #166534; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 0.5px solid #d1fae5; padding-bottom: 6px; margin-bottom: 12px; }
+
+          table { width: 100%; border-collapse: collapse; font-size: 11px; }
+          thead tr { background: #f0fdf4; }
+          th { text-align: left; padding: 7px 10px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7280; font-weight: 600; border-bottom: 0.5px solid #d1d5db; }
+          th:not(:first-child) { text-align: right; }
+          td { padding: 7px 10px; border-bottom: 0.5px solid #f3f4f6; color: #374151; }
+          td:not(:first-child) { text-align: right; }
+          tfoot td { background: #f0fdf4; font-weight: 600; color: #166534; border-top: 1px solid #bbf7d0; }
+
+          .pr-footer { padding: 16px 32px; border-top: 0.5px solid #e5e7eb; font-size: 10px; color: #9ca3af; display: flex; justify-content: space-between; margin-top: 8px; }
+        }
+      `}</style>
+
       {/* Header */}
-      <div className="print-header">
+      <div className="pr-header">
         <div>
-          <div className="hotel-name">🏨 CHTM RRS</div>
-          <div className="hotel-sub">Hotel Management System</div>
+          <div className="pr-hotel-name">CHTM RRS</div>
+          <div className="pr-hotel-sub">Hotel Management System — Audit Report</div>
         </div>
-        <div className="report-meta">
-          <strong>Audit Report</strong>
-          <span>Period: {dateLabel}</span>
-          <br />
-          <span>Generated: {new Date().toLocaleString()}</span>
+        <div className="pr-meta">
+          <strong>Period: {dateLabel}</strong>
+          Generated: {new Date().toLocaleString()}
         </div>
       </div>
 
-      {/* Summary Cards */}
+      {/* KPI Cards */}
       {summary && (
-        <div className="summary-grid">
-          <div className="stat-card">
-            <div className="stat-label">Total Revenue</div>
-            <div className="stat-value green">{peso(summary.total_revenue)}</div>
+        <div className="pr-kpi-grid">
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Total Revenue</div>
+            <div className="pr-kpi-value green">{peso(summary.total_revenue)}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Total Bookings</div>
-            <div className="stat-value">{summary.total_bookings}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Total Bookings</div>
+            <div className="pr-kpi-value">{summary.total_bookings}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Checked Out</div>
-            <div className="stat-value green">{summary.checked_out}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Checked Out</div>
+            <div className="pr-kpi-value green">{summary.checked_out}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Cancelled</div>
-            <div className="stat-value red">{summary.cancelled}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Cancelled</div>
+            <div className="pr-kpi-value red">{summary.cancelled}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Occupancy Rate</div>
-            <div className="stat-value">{summary.occupancy_rate.toFixed(1)}%</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Occupancy Rate</div>
+            <div className="pr-kpi-value">{summary.occupancy_rate.toFixed(1)}%</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Avg Stay (nights)</div>
-            <div className="stat-value">{summary.avg_stay_nights}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Avg Stay</div>
+            <div className="pr-kpi-value">{summary.avg_stay_nights} nights</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">Cash Revenue</div>
-            <div className="stat-value">{peso(summary.cash_revenue)}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">Cash Revenue</div>
+            <div className="pr-kpi-value">{peso(summary.cash_revenue)}</div>
           </div>
-          <div className="stat-card">
-            <div className="stat-label">GCash Revenue</div>
-            <div className="stat-value">{peso(summary.gcash_revenue)}</div>
+          <div className="pr-kpi">
+            <div className="pr-kpi-label">GCash Revenue</div>
+            <div className="pr-kpi-value">{peso(summary.gcash_revenue)}</div>
           </div>
         </div>
       )}
 
-      {/* Revenue Breakdown Table */}
-      <div className="section">
-        <h2>Revenue Breakdown — {dateLabel}</h2>
+      {/* Revenue Breakdown */}
+      <div className="pr-section">
+        <div className="pr-section-title">Revenue Breakdown — {dateLabel}</div>
         <table>
           <thead>
             <tr>
@@ -94,7 +133,7 @@ export default function PrintableReport({
               <th>Cash</th>
               <th>GCash</th>
               <th>Total Revenue</th>
-              <th>Avg/Booking</th>
+              <th>Avg / Booking</th>
             </tr>
           </thead>
           <tbody>
@@ -113,12 +152,12 @@ export default function PrintableReport({
           </tbody>
           <tfoot>
             <tr>
-              <td>TOTAL</td>
+              <td>Total</td>
               <td>{totalBookings}</td>
               <td>{totalCheckouts}</td>
               <td>{totalCancelled}</td>
-              <td>{peso(revenueRows.reduce((s, r) => s + r.cash_revenue, 0))}</td>
-              <td>{peso(revenueRows.reduce((s, r) => s + r.gcash_revenue, 0))}</td>
+              <td>{peso(totalCash)}</td>
+              <td>{peso(totalGCash)}</td>
               <td>{peso(totalRevenue)}</td>
               <td>{totalCheckouts > 0 ? peso(totalRevenue / totalCheckouts) : '—'}</td>
             </tr>
@@ -128,8 +167,8 @@ export default function PrintableReport({
 
       {/* Room Type Breakdown */}
       {roomTypeBreakdown.length > 0 && (
-        <div className="section">
-          <h2>Revenue by Room Type</h2>
+        <div className="pr-section">
+          <div className="pr-section-title">Revenue by Room Type</div>
           <table>
             <thead>
               <tr>
@@ -137,7 +176,7 @@ export default function PrintableReport({
                 <th>Bookings</th>
                 <th>Avg Nights</th>
                 <th>Revenue</th>
-                <th>Avg/Booking</th>
+                <th>Avg / Booking</th>
               </tr>
             </thead>
             <tbody>
@@ -157,8 +196,8 @@ export default function PrintableReport({
 
       {/* Top Rooms */}
       {occupancyRows.length > 0 && (
-        <div className="section">
-          <h2>Top Rooms by Revenue</h2>
+        <div className="pr-section">
+          <div className="pr-section-title">Top Rooms by Revenue</div>
           <table>
             <thead>
               <tr>
@@ -188,8 +227,8 @@ export default function PrintableReport({
 
       {/* Guest Statistics */}
       {guestStats && (
-        <div className="section">
-          <h2>Guest Statistics</h2>
+        <div className="pr-section">
+          <div className="pr-section-title">Guest Statistics</div>
           <table>
             <thead>
               <tr>
@@ -207,6 +246,12 @@ export default function PrintableReport({
           </table>
         </div>
       )}
+
+      {/* Footer */}
+      <div className="pr-footer">
+        <span>CHTM RRS — Hotel Management System</span>
+        <span>Printed: {new Date().toLocaleString()}</span>
+      </div>
     </div>
   );
 }
