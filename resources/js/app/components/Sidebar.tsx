@@ -1,4 +1,3 @@
-
 import { Link } from "@inertiajs/react";
 import { useState, useEffect } from 'react';
 import { useSidebar } from '@/app/context/SidebarContext';
@@ -74,12 +73,13 @@ export default function Sidebar({ activeMenu = 'dashboard' }: SidebarProps) {
   }, []);
 
   const menuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: '⊞', allowedRoles: ['super_admin', 'admin', 'reservation', 'frontoffice', 'housekeeper'] },
-    { id: 'frontoffice', label: 'Front Office', icon: '🏢', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
-    { id: 'reservation', label: 'Reservation', icon: '📅', allowedRoles: ['super_admin', 'admin', 'reservation'] },
-    { id: 'archived', label: 'Archived', icon: '🗄️', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
-    { id: 'room', label: 'Room', icon: '🏠', allowedRoles: ['super_admin', 'admin', 'frontoffice', 'housekeeper'] },
-    { id: 'settings', label: 'System Settings', icon: '⚙', allowedRoles: ['super_admin', 'admin'] },
+    { id: 'dashboard',  label: 'Dashboard',       icon: '⊞',  allowedRoles: ['super_admin', 'admin', 'reservation', 'frontoffice', 'housekeeper'] },
+    { id: 'frontoffice', label: 'Front Office',   icon: '🏢', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
+    { id: 'reservation', label: 'Reservation',    icon: '📅', allowedRoles: ['super_admin', 'admin', 'reservation'] },
+    { id: 'archived',   label: 'Archived',         icon: '🗄️', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
+    { id: 'room',       label: 'Room',             icon: '🏠', allowedRoles: ['super_admin', 'admin', 'frontoffice', 'housekeeper'] },
+    { id: 'audit',      label: 'Audit & Reports',  icon: '📊', allowedRoles: ['super_admin', 'admin'] },
+    { id: 'settings',   label: 'System Settings',  icon: '⚙',  allowedRoles: ['super_admin', 'admin'] },
   ];
 
   const visibleMenuItems = menuItems.filter((item) => {
@@ -88,11 +88,11 @@ export default function Sidebar({ activeMenu = 'dashboard' }: SidebarProps) {
     return item.allowedRoles.includes(role ?? 'user');
   });
 
-
   const getHref = (id: string) => {
     if (id === 'dashboard') return '/dashboard';
     if (id === 'archived') return '/archived';
     if (id === 'frontoffice') return '/frontoffice';
+    if (id === 'audit') return '/audit';
     return `/${id}`;
   };
 
