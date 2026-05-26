@@ -78,7 +78,7 @@ export default function Sidebar({ activeMenu = 'dashboard' }: SidebarProps) {
     { id: 'reservation', label: 'Reservation',    icon: '📅', allowedRoles: ['super_admin', 'admin', 'reservation'] },
     { id: 'archived',   label: 'Archived',         icon: '🗄️', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
     { id: 'room',       label: 'Room',             icon: '🏠', allowedRoles: ['super_admin', 'admin', 'frontoffice', 'housekeeper'] },
-    { id: 'audit',      label: 'Audit & Reports',  icon: '📊', allowedRoles: ['super_admin', 'admin'] },
+    { id: 'audit',      label: 'Audit & Reports',  icon: '📊', allowedRoles: ['super_admin', 'admin', 'frontoffice'] },
     { id: 'settings',   label: 'System Settings',  icon: '⚙',  allowedRoles: ['super_admin', 'admin'] },
   ];
 
